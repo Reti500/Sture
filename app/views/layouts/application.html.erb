@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		<%= link_to image_tag( asset_url("fb.png"), class: "facebook" ), "https://www.facebook.com/sturemx?fref=ts" %>
+		<%= link_to image_tag( asset_url("tw.png"), class: "twitter" ), "https://twitter.com/sturemx" %>
+	</header>
 
 <%= yield %>
 
